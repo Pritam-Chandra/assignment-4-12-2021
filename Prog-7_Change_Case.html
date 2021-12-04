@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Letter-Case Changing</title>
+        
+    	<script type="text/javascript">
+			function case_changing()
+			{
+				var str=document.getElementById("field1").value;
+    			var newStr ="";
+    			for (var i = 0; i < str.length; i++)
+    			{
+       	 		if (str[i] >= 'a' && str[i] <= 'z')
+            		// Convert lowercase to uppercase
+            		newStr+= str[i].toUpperCase();
+        		else if (str[i] >= 'A' && str[i] <= 'Z')
+            		// Convert uppercase to lowercase
+            		newStr+= str[i].toLowerCase();
+    			}
+  				document.getElementById("field2").value= newStr;
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>Prog-07. In a given string change lower case letters to upper case and upper-case ones to lower-case one.</h3><br>
+		<center>
+        	Input The String: <input type="text" id="field1"><br><br>
+			The String after changing case: <input type="text" id="field2"><br><br>
+			<button type="button" onClick="case_changing()">click</button>
+        </center>
+	</body>
+</html>

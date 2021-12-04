@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html>
+	<head>
+		<title>String Reverse</title>
+    	<script type="text/javascript">
+			function ReverseString() 
+			{ 
+				var str=document.getElementById("field1").value;
+  				var arr;
+    			// Check input
+    			if(!str || str.length < 2 || typeof str!== 'string') {
+       		 		arr= 'Not valid'; 
+    			}
+      
+    			// Take empty array revArray
+    			const revArray = [];
+    			const length = str.length - 1;
+      
+    			// Looping from the end
+    			for(let i = length; i >= 0; i--) {
+        			revArray.push(str[i]);
+    			}
+      
+    			// Joining the array elements
+    			revArray.join('');
+ 				arr = revArray.join('');
+
+  				document.getElementById("field2").value= arr;
+			}
+  	
+		</script>
+	</head>
+
+	<body>
+    	<center>
+		<h1>Prog-03. Reverse a given string.</h1><br>
+		Input The String: <input type="text" id="field1"><br><br>
+		The String after Reversing: <input type="text" id="field2"><br><br>
+
+		<button type="button" onClick="ReverseString()">Reverse</button>
+		</center>
+
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    	<title>image-processing</title>
+    
+    	<script type="text/javascript">
+        	function increase() 
+			{
+            	document.getElementById("img").style.height = "500px";
+            	document.getElementById("img").style.width = "500px";
+        	}
+        	function decrease() 
+			{
+            	document.getElementById("img").style.height = "400px";
+            	document.getElementById("img").style.width = "400px";
+        	}
+    	</script>
+	</head>
+
+	<body>
+		<center>
+        	<h3>Prog-05. WAP so that on moving the cursor to any item (e.g.: image or button) makes it bigger in size.</h3>
+        	<img src="https://picsum.photos/200/300" onmouseover="increase()" onmouseout="decrease()" alt="random image" height="300" width="300" 														
+            id='img'>
+        </center>
+	</body>
+
+</html>

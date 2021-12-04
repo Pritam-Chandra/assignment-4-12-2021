@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Copy to Clipboard</title>
+
+    	<script type="text/javascript">
+			function myFunction() {
+  				var copyText = document.getElementById("myInput");
+
+		  		/* Select the text field */
+  				copyText.select();
+
+  				/* Copy the text inside the text field */
+  				navigator.clipboard.writeText(copyText.value);
+  
+  				/* Alert the copied text */
+  				alert("Copied the text: " + copyText.value);
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>Prog-08.Copy a given string to clipboard.</h3>
+        <center>
+			Enter the String: <input type="text" id="myInput"><br><br>
+			<button onClick="myFunction()">Copy text</button>
+		</center>
+    </body>
+</html>

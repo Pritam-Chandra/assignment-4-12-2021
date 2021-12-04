@@ -1,0 +1,59 @@
+<!DOCTYPE html>  
+<html>  
+	<head>  
+		<title>Calculator</title>  
+
+    	<script type="text/javascript">
+			function addition()
+			{
+				let a=parseFloat(document.getElementById("field1").value);
+				let b=parseFloat(document.getElementById("field2").value);
+				let result=a+b;  	
+  				document.getElementById("field3").value= result;
+			}
+
+			function subtraction()
+			{
+				let a=parseFloat(document.getElementById("field1").value);
+				let b=parseFloat(document.getElementById("field2").value);
+				let result=a-b;  	
+  				document.getElementById("field3").value= result;
+			}
+
+			function multiplication()
+			{
+				let a=parseFloat(document.getElementById("field1").value);
+				let b=parseFloat(document.getElementById("field2").value);
+				let result=a*b;  	
+  				document.getElementById("field3").value= result;
+			}
+
+			function divition()
+			{
+				let a=parseFloat(document.getElementById("field1").value);
+				let b=parseFloat(document.getElementById("field2").value);
+				let result=a/b;  	
+  				document.getElementById("field3").value= result;
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+		<h1>Prog-02. Calculator </h1><br>
+ 		<center>  
+			Input The 1st Number: <input type="text" id="field1"><br><br>
+			Input The 2st Number: <input type="text" id="field2"><br><br>
+			Result: <input type="text" id="field3"><br><br>
+            <table >  
+			    <tr>   
+    				<td> <input class = "btn" type = "button" value = "+" onclick = "addition()" > </td>  
+    				<td> <input class = "btn" type = "button" value = "-" onclick = "subtraction()" > </td>  
+    				<td> <input class = "btn" type = "button" value = "*" onclick = " multiplication()" > </td>  
+    				<td> <input class = "btn" type = "button" value = "/" onclick = "divition()" ></td>  
+    			</tr>  
+   			</table>  
+   		</center>  
+ 	</body>  
+ </html>  

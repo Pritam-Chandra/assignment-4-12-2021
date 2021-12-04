@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>    
+	<head>
+		<title>Bubble_sort</title> 
+        
+    	<script type="text/javascript">
+
+			function bubble_sort()
+			{
+    			var b = document.getElementById("array[]").value;
+    			var a =b.split(",");
+    			for(var i = 0; i < a.length; i++)    
+    			{    
+        			for (var j = i+1; j < a.length; j++)    
+        			{    
+            			if(+a[i] > +a[j])    
+            			{    
+                			temp = a[i];    
+                			a[i]=a[j];    
+                			a[j] = temp;     
+            			}    
+        			}    
+    			}   
+				document.getElementById("res[]").value=a; 
+			}
+    	</script> 
+	</head>     
+	<body>    
+		<h2>Prog-10. Write a Bubble sort algorithm, take input from user.</h2><br>
+        
+		<center>
+			Input The Values: <input type="text" id="array[]"><br>
+        	(eg. 25,63,12)<br><br>
+			After Sorting: <input type="text" id="res[]" ><br><br>
+  			<button onClick="bubble_sort()">Sort</button>
+        </center>
+    </body>    
+</html>

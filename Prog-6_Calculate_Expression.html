@@ -1,0 +1,25 @@
+<!DOCTYPE html>  
+<html>
+	<head>
+		<title>Calculation of an Expression</title>
+
+    	<script type="text/javascript">
+			function calculate()
+			{
+				const x=parseFloat(document.getElementById("field1").value);
+  				const result =(x+x/2+x/4+x/8);
+  				document.getElementById("field2").value= result;
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<h1>Prog-06. Compute x + x/2 + x/4 + x/8 (x will be a user input).</h1><br>
+        <center>
+			Enter the value of X: <input type="text" id="field1"><br><br>
+    		x + x/2 + x/4 + x/8 =  <input type="text" id="field2"><br><br>
+        	<button type="button" onClick="calculate()">Result</button>
+		</center>
+	</body>
+</html>

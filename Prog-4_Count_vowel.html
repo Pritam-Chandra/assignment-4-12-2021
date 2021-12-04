@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html>
+	<head>
+		<title>Vowel counting</title>
+
+    	<script type="text/javascript">
+			function count_vowel()
+			{
+				var str=document.getElementById("field1").value;
+
+    			const count = str.match(/[aeiou]/gi).length;		// vowel count
+	
+			  	document.getElementById("field2").value=count;
+			}
+		</script>
+
+	</head>
+
+	<body>
+    	<center>
+			<h1>Prog-04. Count vowels of a given string.</h1><br>
+			Input The String: <input type="text" id="field1"><br><br>
+			No of Vowel:      <input type="text" id="field2"><br><br>
+
+			<button type="button" onClick="count_vowel()">Count</button>
+		</center>
+
+	</body>
+</html>
